@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>ALGORITMOS</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:400,500&display=swap"
+    rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  
+<!--HEADER-------------------------------------------------------------------------------------------->
+  <header class="header_section">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="#">
+          <div class="logo_box">
+            <img src="images/logo.png" alt="" width="450" height="50" />
+          </div>
+        </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"  aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-2">
+            <li class="nav-item active"><a class="nav-link" href="Genius Software.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="Test.html">Test</a></li>
+            <li class="nav-item"><a class="nav-link" href="Portafolio.html">Portafolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+<!--END HEADER---------------------------------------------------------------------------------------->
+
+<!--CONTENIDO------------------------------------------------------------------------------------------>
+
+<!-- welcome section -->
+  <section class="welcome_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class=" col-md-6">
+          <div>
+            <img class="img-fluid" src="images/algoritmos.jpg" alt="" />
+          </div>
+        </div>
+        <div class=" col-md-6">
+          <div class="welcome_detail">
+            <h1>
+              Algoritmos
+            </h1>
+            
+          </div>
+          <hr>
+          <br><h3>¿Qué es un algoritmo?</h3>
+          Es un conjunto ordenado y finito de operaciones que permite hallar la solución de un problema.<br>
+          <br><h3>Partes de un algoritmo</h3>
+          Las tres partes de un algoritmo son:
+          <ol>
+            <li><b>Input (entrada):</b>información que damos al algoritmo con la que va a trabajar para ofrecer la solución esperada.</li>
+            <li><b>Proceso:</b> conjunto de pasos para que, a partir de los datos de entrada, llegue a la solución de la situación. </li>
+            <li><b>Output (salida):</b> resultados, a partir de la transformación de los valores de entrada durante el proceso.</li>
+          </ol>
+          <br><h3>Caracteristicas</h3>
+          Asimismo, los algoritmos se definen porque son:
+          <ul>
+            <li><b>Precisos:</b> objetivos, sin ambigüedad. </li>
+            <li><b>Ordenados:</b> presentan una secuencia clara y precisa para poder llegar a la solución.</li>
+            <li><b>Finitos:</b> pontienen un número determinado de pasos.</li>
+            <li><b>Concretos:</b> ofrecen una solución determinada para la situación o problema planteados.</li>
+            <li><b>Definidos:</b> el mismo algoritmo debe dar el mismo resultado al recibir la misma entrada. </li>
+          </ul>
+          <br><h3>Tipos de algoritmos</h3>
+          Se distingue entre algoritmos cuantitativos y cualitativos, si lo hacen a través de cálculos matemáticos o secuencias lógicas.
+          <ul>
+            <li><b>Cuantitativos:</b> instrucciones que incluyen procesos numericos. </li>
+            <li><b>Cualitativos:</b> son intrucciones que se dan por medio de palabras para resolver un problema.</li>
+          </ul>
+          <video src="images/algoritmo.mp4" controls width="500" height="350"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<center>&nbsp;&nbsp;&nbsp;</center><br>
+  <!-- end welcome section -->
+
+<!--END CONTENIDO-------------------------------------------------------------------------------------->
+
+<!-- FOOTER ------------------------------------------------------------------------------------------->
+  <section class="container-fluid footer_section">
+    <p><center><p> <font face="Constantia" size="3" style="color: #ffffff">Copyright © 2022 | Genius Sotfware</a></p></font></center></p>
+  </section>
+<!-- END FOOTER --------------------------------------------------------------------------------------->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+
+  <script>
+    $(".nav_search-btn").click(function () {
+      if ($(".nav_search-input").hasClass("d-none")) {
+        event.preventDefault();
+        $(".nav_search-input")
+          .animate({
+              left: "-1000px"
+            },
+            "1000000"
+          )
+          .removeClass("d-none");
+      } else {
+        $(".nav_search-input")
+          .animate({
+              left: "0px"
+            },
+            "1000000"
+          )
+          .addClass("d-none");
+      }
+    });
+  </script>
+</body>
+</html>

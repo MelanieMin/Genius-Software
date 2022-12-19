@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>METODOS</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:400,500&display=swap"
+    rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  
+<!--HEADER-------------------------------------------------------------------------------------------->
+  <header class="header_section">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="#">
+          <div class="logo_box">
+            <img src="images/logo.png" alt="" width="450" height="50" />
+          </div>
+        </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"  aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-2">
+            <li class="nav-item active"><a class="nav-link" href="Genius Software.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="Test.html">Test</a></li>
+            <li class="nav-item"><a class="nav-link" href="Portafolio.html">Portafolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+<!--END HEADER---------------------------------------------------------------------------------------->
+
+<!--NOSOTROS------------------------------------------------------------------------------------------>
+
+<!-- welcome section -->
+  <section class="welcome_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class=" col-md-6">
+          <div>
+            <img class="img-fluid" src="images/metodos.jpg" alt="" />
+          </div>
+        </div>
+        <div class=" col-md-6">
+          <div class="welcome_detail">
+            <h1>
+              Métodos, funciones y parametros
+            </h1>
+            </div>
+          <hr>
+          <br><h3>¿Qué son los métodos en Java?</h3>
+            Un método en Java es una porción de código que realiza tareas asociadas a un objeto, básicamente un método es una función que pertenece a un objeto o clase.<br>
+          <br><h3>Ejemplos</h3>
+          <b>Void: </b>significa que la función no devuelve nada.
+          <p><b>Public: </b>indica que se puede invocar desde fuera de la clase.
+
+          <br><h3>¿Qué son las funciones en Java?</h3>
+            Una función es una agrupación de sentencias que nos permiten ejecutar tareas repetitivas sin tener que escribirlas cada vez, cumple la misma función de un método, pero no necesita de un objeto para existir por sí misma.<br>
+          <br><h3>Ejemplos</h3>
+          <b>Private:</b> indica que se puede utilizar solo dentro la clase, no es accesible desde fuera.
+          <p><b>Static: </b> indica que las funciones pertenecen a la clase y podrán ser invocados sin necesidad de crear un objeto de la clase de la función
+
+          <br><h3>¿Qué son los parámetros en Java?</h3>
+            Los parámetros de una función son los valores que se colocan entre los paréntesis que están al lado del nombre de la función, indicándose el tipo de cada uno y su nombre.<br>
+          <p>
+            Los parámetros o argumentos son variables locales, a estas variables les asignamos un valor antes de que se ejecute la función, su ámbito de validez, por tanto, es el propio cuerpo de la función.
+            <p>
+            En los parámetros se define el tipo de dato que van a recibir, si es un número, cadena u otros. Cada parámetro se separa con comas.
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end welcome section -->
+
+<!--END CONTENIDO-------------------------------------------------------------------------------------->
+
+<!-- FOOTER ------------------------------------------------------------------------------------------->
+  <section class="container-fluid footer_section">
+    <p><center><p> <font face="Constantia" size="3" style="color: #ffffff">Copyright © 2022 | Genius Sotfware</a></p></font></center></p>
+  </section>
+<!-- END FOOTER --------------------------------------------------------------------------------------->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+
+  <script>
+    $(".nav_search-btn").click(function () {
+      if ($(".nav_search-input").hasClass("d-none")) {
+        event.preventDefault();
+        $(".nav_search-input")
+          .animate({
+              left: "-1000px"
+            },
+            "1000000"
+          )
+          .removeClass("d-none");
+      } else {
+        $(".nav_search-input")
+          .animate({
+              left: "0px"
+            },
+            "1000000"
+          )
+          .addClass("d-none");
+      }
+    });
+  </script>
+</body>
+</html>
